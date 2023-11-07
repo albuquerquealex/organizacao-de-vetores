@@ -13,7 +13,6 @@ int main() {
 	for (i = 0; i < 7; i++) {
 		printf("Digite um numero: ");
 		scanf("%d", &vetor[i]);
-		vetor[i] *= 2;
 	}
 
 	qsort(valores, 7, sizeof(valores[0]), crescente);
