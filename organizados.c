@@ -1,3 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int crescente(const void *a, const void *b) {
+	return (*(int *)a - *(int *)b);
+        }
+
+
 int main() {
 	int vetor[7};
         int i;
@@ -7,6 +15,8 @@ int main() {
 		scanf("%d", &vetor[i]);
 		vetor[i] *= 2;
 	}
+
+	qsort(valores, 7, sizeof(valores[0]), crescente);
 
         printf("Numeros em ordem crescente:\n");
 	for (i = 0; i < 7; i++) {
